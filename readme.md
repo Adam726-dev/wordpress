@@ -1,0 +1,1 @@
+# Droga Klaudio, proszę o pomoc - nic nie działa :/
