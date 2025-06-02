@@ -10,6 +10,15 @@ Author URI: https://uniqsoft.pl
 
 */
 
+/* Nowoczesny styl dla portfolio-theme */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
 .main-content-aboutme {
   display: flex;
   flex-direction: row;
@@ -87,12 +96,6 @@ Author URI: https://uniqsoft.pl
   padding: 10px;
 }
 
-body {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
 nav {
   position: sticky;
   top: 0;
@@ -413,4 +416,381 @@ textarea {
   .hamburger {
     display: block;
   }
+}
+
+.main-front-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    padding: 80px 0 60px 0;
+    text-align: center;
+}
+.hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.about {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-bottom: 40px;
+}
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+.about p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.portfolio {
+    padding: 60px 0 40px 0;
+}
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+.portfolio-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px 18px 18px 18px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.portfolio-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.13);
+}
+.portfolio-item img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.portfolio-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.portfolio-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.contact {
+    background: #f0f4fa;
+    padding: 60px 0 40px 0;
+    border-radius: 24px;
+    margin: 40px 0;
+}
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 14px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    resize: none;
+    transition: border 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #4f8cff;
+    outline: none;
+}
+.contact-form button {
+    background: linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+.contact-form button:hover {
+    background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+    box-shadow: 0 4px 16px rgba(79,140,255,0.13);
+}
+
+/***** EBOOK STORE METAMORFOZA *****/
+.ebook-store-front {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f9;
+    color: #222;
+}
+.hero-ebook {
+    background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    padding: 90px 0 70px 0;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(79,140,255,0.08);
+}
+.hero-ebook .hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+}
+.hero-ebook .hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    font-weight: 700;
+    padding: 16px 38px;
+    border-radius: 32px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(79,140,255,0.13);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+    background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.bestsellers {
+    background: #fff;
+    padding: 60px 0 40px 0;
+}
+.bestsellers h2 {
+    font-size: 2.2rem;
+    margin-bottom: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+.ebook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+}
+.ebook-card {
+    background: #f8fafc;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.07);
+    padding: 28px 18px 22px 18px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ebook-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(79,140,255,0.15);
+}
+.ebook-card img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+.ebook-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.ebook-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4f8cff;
+    margin-bottom: 16px;
+    display: block;
+}
+.buy-btn {
+    background: linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.10);
+    margin-top: auto;
+}
+.buy-btn:hover {
+    background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+    box-shadow: 0 6px 18px rgba(79,140,255,0.18);
+    transform: scale(1.05);
+}
+
+.categories {
+    background: #f7f7f9;
+    padding: 50px 0 30px 0;
+}
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+.category-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.07);
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4f8cff;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.category-card:hover {
+    background: #4f8cff;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(79,140,255,0.13);
+}
+
+.about-ebook-store {
+    background: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+.about-ebook-store h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.about-ebook-store p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-ebook-store {
+    background: #f0f4fa;
+    padding: 50px 0 30px 0;
+    border-radius: 24px;
+    margin: 40px 0;
+}
+.contact-ebook-store h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 14px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    resize: none;
+    transition: border 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.5px solid #4f8cff;
+    outline: none;
+}
+.contact-form button {
+    background: linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+.contact-form button:hover {
+    background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+    box-shadow: 0 4px 16px rgba(79,140,255,0.13);
+}
+
+@media (max-width: 900px) {
+    .ebook-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .hero-ebook .hero-title {
+        font-size: 2rem;
+    }
+    .ebook-grid {
+        grid-template-columns: 1fr;
+    }
+    .cta-btn {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
+    .category-card {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
 }
